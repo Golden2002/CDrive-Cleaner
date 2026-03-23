@@ -235,6 +235,77 @@
 
 ---
 
+# Windows C Drive Cleanup Tool
+
+A safe and flexible Windows system cleanup tool with multiple cleanup levels and interactive selection.
+
+## Features
+
+- **Multi-level Cleanup** - 4 cleanup levels for different needs
+- **Safety First** - Auto-skip dangerous items, confirm before cleanup
+- **Interactive Selection** - Choose which items to clean
+- **Preview** - Show estimated space before cleanup
+
+## Quick Start
+
+```powershell
+# Check available space
+.\Clean-CDrive2.ps1 -Level 0
+
+# Preview cleanup plan
+.\Clean-CDrive2.ps1 -Level 2 -Preview
+
+# Execute cleanup (recommended)
+.\Clean-CDrive2.ps1 -Level 2 -Confirm
+```
+
+## Cleanup Levels
+
+| Level   | Description                | Est. Space |
+| ------- | -------------------------- | ---------- |
+| Level 1 | Temp files only            | 0-1 GB     |
+| Level 2 | Common cache (default)     | 1-5 GB     |
+| Level 3 | Deep cleanup (interactive) | 5-20 GB    |
+| Level 4 | Full cleanup               | 10-50 GB   |
+
+## Supported Items
+
+### Level 1 - Minimal
+
+- Windows Temp
+- User Temp
+
+### Level 2 - Normal
+
+- npm Cache
+- pip Cache
+- OfficePLUS Cache
+- GitHub Desktop Cache
+
+### Level 3 - Deep (Optional)
+
+- JetBrains IDE Cache
+- VS Code Cache
+- Browser Cache (Chrome/Edge/Firefox)
+- Python Cache
+- DingTalk Cache
+
+### ⚠️ Dangerous (Require Confirmation)
+
+- QQ/WeChat chat records (backup recommended)
+- DingTalk (re-login required)
+
+## Requirements
+
+- Windows 10/11
+- PowerShell 5.0+
+
+## License
+
+MIT License
+
+---
+
 ## License
 
 MIT License - 可自由使用和修改
