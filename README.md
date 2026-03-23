@@ -3,7 +3,7 @@
 一个安全、灵活的 Windows 系统清理工具，支持多种清理级别和交互式选择。
 
 项目文件结构
-D:\c盘清理\
+CDrive-Cleaner\
 ├── README.md              # 中/英文用户指南
 ├── Clean-CDrive2.ps1      # 主脚本 (推荐)
 ├── Clean-CDrive.ps1       # 旧版脚本
