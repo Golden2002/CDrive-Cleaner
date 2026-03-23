@@ -4,10 +4,10 @@
 
 项目文件结构
 CDrive-Cleaner\
-├── README.md              # 中/英文用户指南
-├── Clean-CDrive2.ps1      # 主脚本 (推荐)
-├── Clean-CDrive.ps1       # 旧版脚本
-└── Dism++10.1.1001.1/    # 额外工具(可选)
+\├── README.md              # 中/英文用户指南
+\├── Clean-CDrive2.ps1      # 主脚本 (推荐)
+\├── Clean-CDrive.ps1       # 旧版脚本
+\└── Dism++10.1.1001.1/    # 额外工具(可选)
 
 ## 功能特点
 
